@@ -1,0 +1,282 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/intromenu.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/cardsstyle.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/history.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/blackblockDishes.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/contacts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="header" style="background-image: url('{% static 'vendor/images/bg1.jpg' %}');"> <!--Меню сайта -->
+    <div class="div container">
+        <div class="headerline">
+            <div class="headerlogo">
+                <a href="{% url 'index' %}" class=""><img src="{% static 'vendor/images/logo-orange.png' %}" width="65px"
+                                                   height="200px" alt="logo"></a>
+            </div>
+            <div class="menu" id="menu">
+                <a href="#about" class="nav-item">О НАС</a>
+                <a href="loginpage.py" class="nav-item">ВХОД</a>
+                <a href="booking.py" class="nav-item">БРОНЬ</a>
+                <a href="#contacts" class="nav-item">КОНТАКТЫ</a>
+            </div>
+            <div class="cart">
+                <a href="#" class="">
+                    <img src="{% static 'vendor/images/card.png' %}" width="10px" height="10px" class="cart-img" alt="">
+                </a>
+            </div>
+            <div class="phone">
+                <div class="phoneholder">
+                    <div class="phone-img">
+                        <img src="{% static 'vendor/images/phone.png' %}" alt="">
+                    </div>
+                    <div class="number">
+                        <a href="#" class="num">+996-554-118-827</a>
+                    </div>
+                </div>
+                <div class="phonetext">
+                    Свяжитесь с нами для <br> бронирования
+                </div>
+
+            </div>
+            <div class="btn">
+                <a href="" class="button">ЗАКАЗ СТОЛИКА</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="header-down">
+        <div class="header-title">
+            Добро пожаловать в
+            <div class="header-subtitle">
+                Наш ресторан
+            </div>
+            <div class="header-name">
+                ГАРЦУЮЩАЯ КОБЫЛА
+            </div>
+            <div class="header-btn">
+                <a href="{% url 'menu' %}" class="header-button">МЕНЮ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cards" id="about"><!-- Карточки -->
+    <div class="container">
+        <div class="cards-holders">
+            <div class="svitok">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'vendor/images/card.png' %}" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-title">
+                        Магическая <span> Атмосфера </span>
+                    </div>
+                    <div class="card-desk">
+                        В нашем заведении царит магическая
+                        атмосфера наполненная вкусными ароматами
+                    </div>
+                </div>
+                <img src="{% static 'vendor/images/svitok1.png' %}" alt="" class="svitok-image">
+            </div>
+            <div class="svitok">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'vendor/images/card.png' %}" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-title">
+                        Лучшее Качество <span> Еды</span>
+                    </div>
+                    <div class="card-desk">
+                        Качество нашей Еды - отменное!
+                    </div>
+                </div>
+                <img src="{% static 'vendor/images/svitok1.png' %}" alt="" class="svitok-image">
+            </div>
+            <div class="svitok">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'vendor/images/card.png' %}" alt="" class="card-img">
+                    </div>
+
+                    <div class="card-title">
+                        Недорогая <span> Еда </span>
+                    </div>
+                    <div class="card-desk">
+                        Стоимость нашей Еды зависит только от её количества.
+                        Качество всегда на высоте!
+                    </div>
+                </div>
+                <img src="{% static 'vendor/images/svitok1.png' %}" alt="" class="svitok-image">
+            </div>
+
+        </div>
+        <div class="cards-holders-teni">
+            <div class="svitok-teni">
+                <img src="{% static 'vendor/images/svitok-ten.png' %}" alt="" class="svitok-img-ten">
+            </div>
+            <div class="svitok-teni">
+                <img src="{% static 'vendor/images/svitok-ten.png' %}" alt="" class="svitok-img-ten">
+            </div>
+            <div class="svitok-teni">
+                <img src="{% static 'vendor/images/svitok-ten.png' %}" alt="" class="svitok-img-ten">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Блок с историей ресторана -->
+<div class="history">
+    <div class="container">
+        <div class="history-holder">
+            <div class="history-info">
+                <div class="history-title">
+                    Наша <span> История</span>
+                </div>
+
+                <div class="history-desc">
+                    Как и любого другого самобытного места, у нас есть своя,
+                    особая история. Идея ресторана пришла основателю неожиданно.
+                    Во время своих странствий создатель нашего ресторана застрял
+                    в сотнях километров от ближайшего населенного пункта. Вдали
+                    от цивилизации ему пришлось навремя обустраивать себе нехитрый
+                    быт, добывать и готовить еду, этот "нехитрый быт" в итоге
+                    перерос в нашу "Гарцующую Кобылу".
+                    <div class="list">
+                        <img src="{% static 'vendor/images/list.png' %}" alt="" class="list-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-image">
+                <img src="{% static 'vendor/images/tent.png' %}" alt="" class="tent">
+            </div>
+            <div class="bg-forest">
+                <img src="{% static 'vendor/images/bgforest2.png' %}" alt="" class="bg-forestimg">
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Блок с заказом стола -->
+<div class="black-block" style="background-image: url('{% static 'vendor/images/bgblack1.png' %}');">
+    <div class="container">
+        <div class="block-holder">
+            <div class="left">
+                <div class="left-title">
+                    Приглашаем в один из <br> самых лучших ресторанов.
+                </div>
+                <div class="left-text">
+                    Только в этом месяце бизнес-ланч от 7 $
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-button">
+                    <a href="#" class="right-btn">
+                        Заказ столика
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dishes">
+    <div class="container">
+        <div class="dishes-title">
+            Блюда <span> Недели</span>
+        </div>
+    </div>
+</div>
+<!-- Карусель -->
+<div class="dishes">
+    <div class="container">
+        <div class="dishes-title">
+            Отзывы наших <span> гостей</span>
+        </div>
+        <div class="foods">
+            <div class="foods-image">
+                <img src="{% static 'vendor/images/Character' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="slider middle">
+
+
+    <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+
+        <div class="slide s1"><img src="{% static 'vendor/images/rynokfonrazmyt2.png' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'vendor/images/vorotafonrazmyt2.png' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'vendor/images/castlefonrazmyt2.png' %}" alt=""></div>
+        <div class="slide"><img src="{% static 'vendor/images/dorogafonrazmyt2.png' %}" alt=""></div>
+
+        <div class="slidechar s0"><img src="{% static 'vendor/images/Character/Devushka.png' %}" alt=""></div>
+        <div class="slidechar s2"><img src="{% static 'vendor/images/Character/Huligan.png' %}" alt=""></div>
+        <div class="slidechar s3"><img src="{% static 'vendor/images/Character/Princ.png' %}" alt=""></div>
+        <div class="slidechar s4"><img src="{% static 'vendor/images/Character/Puteshestvennik.png' %}" alt=""></div>
+
+        <div class="sliderep s5"><img src="{% static 'vendor/images/Character/devushkarep.png' %}" alt=""></div>
+        <div class="sliderep s6"><img src="{% static 'vendor/images/Character/huliganrep.png' %}" alt=""></div>
+        <div class="sliderep s7"><img src="{% static 'vendor/images/Character/princrep.png' %}" alt=""></div>
+        <div class="sliderep s8"><img src="{% static 'vendor/images/Character/puteshestvennikrep.png' %}" alt=""></div>
+
+
+        <div class="slidestar s5"><img src="{% static 'vendor/images/Character/fivestars2.png' %}" alt=""></div>
+        <div class="slidestar s6"><img src="{% static 'vendor/images/Character/3-stars.png' %}" alt=""></div>
+        <div class="slidestar s7"><img src="{% static 'vendor/images/Character/4spolovinoistars.png' %}" alt=""></div>
+        <div class="slidestar s8"><img src="{% static 'vendor/images/Character/fivestars2.png' %}" alt=""></div>
+    </div>
+    <div class="navigatin">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+    </div>
+
+</div>
+<!-- Контакты -->
+<center>
+    <div class="contacts" id="contacts">
+        <table class="table">
+            <tr>
+                <td class="stolb1">Наш e-mail адрес:</td>
+                <td class="stolb2"><a href="mailto:amantur.ergeshiv001@gmail.com" class="ssylka">gorkobyla@gmail.com</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="stolb1">Наш телефон:</td>
+                <td class="stolb2">+996 (554) 118 827</td>
+            </tr>
+            <tr>
+                <td class="stolb1">Голубинная почта:</td>
+                <td class="stolb2">№ 33459</td>
+            </tr>
+            <tr>
+                <td class="stolb1">Наш адрес:</td>
+                <td class="stolb2">г. Альбиус; Блошинный Рынок 137</td>
+            </tr>
+        </table>
+    </div>
+</center>
+<script src="{% static 'scripts/main.js' %}">
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.cards-holders{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -58px;
+}
+.cards-holders-teni{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -338px;
+}
+
+.card{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 60px;
+}
+.svitok{
+    width: 450px;
+    z-index: 1;
+    margin: 0 15px;
+    position: relative;
+}
+
+.svitok-teni{
+    width: 450px;
+    z-index: 0;
+    margin: 0 15px;
+    position: relative;
+}
+.svitok-image{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.svitok-image::before{
+    position: absolute;
+}
+
+.svitok-img-ten{
+    margin-left: 14px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.svitok-ten::before{
+    position: absolute;
+}
+.card-img{
+    padding-top: 24px;
+    width: 70px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+.card-title span{
+    color: rgb(240, 135, 69);
+    margin-left: 5px;
+}
+.card-desk{
+    color: rgb(78, 78, 78);
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 1px 7px;
+    text-align: center;
+}
+/* ____________________________________________________________________________________________________-- */

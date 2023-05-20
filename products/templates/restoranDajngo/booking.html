@@ -1,0 +1,28 @@
+<!-- <?php setcookie('user',$result['username'], time() - 24*3600, "/"); ?> -->
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="/css/booking.css" rel="stylesheet" type="text/css">
+</head>
+<script src="essets/login.js"></script>
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" name="form2" method="POST" action="validationtime.php">
+            <input type="text" name="username" id="username" placeholder="Введите логин"/>
+            <input type="date" name="date" id="date" placeholder="Введите дату для брон"/>
+            <p>Со скольки</p>
+            <input class="t" type="text" name="timefrom" id="timefrom" placeholder="00-24" maxlength="2"
+                   pattern="[0-2]{1}\[0-9]{1}"/>:00
+            <p>- До скольки</p>
+            <input class="t" type="text" name="timeto" id="timeto" placeholder="00-24" maxlength="2"
+                   pattern="[0-2]{1}"/>:00
+            <input class="button" type="submit" value="Выбрать столик">
+
+        </form>
+    </div>
+</div>
+</html>

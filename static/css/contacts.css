@@ -1,0 +1,24 @@
+.contacts{
+    margin-top: -90px;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.table{
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.stolb1{
+    padding-right: 170px;
+    padding-top: 21px;
+}
+.stolb2{
+    padding-top: 21px;
+}
+.ssylka{
+    color: #fff;
+    text-decoration: none;
+}

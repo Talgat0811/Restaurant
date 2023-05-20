@@ -1,0 +1,26 @@
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    /* background-color: rgb(56, 56, 56);
+    background-size: cover; */
+    
+}
+.button{
+    background-color: rgb(243, 216, 165);
+    padding: 15px 20px;
+    color: rgb(248, 153, 12);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 30px;
+    transition: background-color 0.3s linear;
+    border-radius: 13px;
+}
+.button:hover{
+    background-color: rgb(245, 239, 234);
+}
+body{
+    background: url("/b/кухня.jpg");
+}

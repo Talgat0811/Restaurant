@@ -1,0 +1,126 @@
+{% load static %}
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link href="{% static 'css/menu1.css' %}" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-image: url('/static/vendor/images/menutemn.png'); /* Путь к фоновому изображению */
+            background-color: #c7b39b; /* Цвет фона */
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+<div class="row">
+
+
+    <div class="row_posters" onscroll="getScrollVal()">
+        <div class="wrap">
+            <a href="{% url 'breakfest' %}"><img src="{% static 'vendor/img/products/яичница с томатами.jpg' %}"
+                                                 alt="movieImage" class="row_poster"/></a>
+            <h5 class="poster_title">Завтраки</h5>
+            <div class="poster_info">
+                <h2>Завтраки</h2>
+                <p>
+                <h2>Побалуйте себя вкуснейшими завтраками. Подарите себе хорошее настроение с утра!</h2></p>
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="{% url 'second' %}"><img src="{% static 'vendor/images/вторые.jpg' %}" alt="movieImage"
+                                              class="row_poster"/></a>
+            <h5 class="poster_title">Первые блюда</h5>
+            <div class="poster_info">
+                <h2>Первые блюда</h2>
+                <p>
+                <h2>Наваристые, насыщенные и горячие супы ,или освежающие и нежные летние супы на любой вкус.</h2></p>
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="{% url 'third' %}"><img src="{% static 'vendor/images/первое.jpg' %}" alt="movieImage"
+                                             class="row_poster"/></a>
+            <h5 class="poster_title">Вторые блюда</h5>
+            <div class="poster_info">
+                <h2>Вторые блюда</h2>
+                <p>
+                <h2>Ох этот хруст корочки... Запах ароматного мяса с оригинальными гарнирами и свежайшими овощами. Всё
+                    для Вас!</h2></p>
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="{% url 'zakuski' %}"><img src="{% static 'vendor/images/закуски.jpg' %}" alt="movieImage"
+                                               class="row_poster"/></a>
+            <h5 class="poster_title">Закуски</h5>
+            <div class="poster_info">
+                <h2>Закуски</h2>
+                <p>
+                <h2>Ну, какое застолье без закусок?) Самое то, чтобы пощекотать вкусовые рецепторы</h2>.</p>
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="{% url 'salads' %}"><img src="{% static 'vendor/images/салаты.jpg' %}" alt="movieImage"
+                                              class="row_poster"/></a>
+            <h5 class="poster_title">Салаты</h5>
+            <div class="poster_info">
+                <h2>Салаты</h2>
+                <p>
+                <h2>Острые, овощные, фруктовые, с мясом, с морепродуктами с сыром! Мммм... Каких только слатов не бывает
+                    на свете! У нас Вы обязательно найдёте салаты на Ваш вкус.</h2></p>
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="tarelka.html"><img src="{% static 'vendor/images/тарелки.jpg' %}" alt="movieImage"
+                                        class="row_poster"/></a>
+            <h5 class="poster_title">Нарезки</h5>
+            <div class="poster_info">
+                <h2>Нарезки</h2>
+                <p>
+                <h2>Тарелка наполненная ломтиками сыра или нарезанных фруктов широкого ассортимента будут прекрасным
+                    угощением и украшением стола!</h2></p>
+            </div>
+        </div>
+        <div class="wrap">
+            <a href="{% url 'sweets' %}"><img src="{% static 'vendor/images/де.jpg' %}" alt="movieImage"
+                                              class="row_poster"/></a>
+            <h5 class="poster_title">Дессерты</h5>
+            <div class="poster_info">
+                <h2>Дессерты</h2>
+                <p>
+                <h2>Разнообразие дессертов для каждого сладкоежки!.</h2></p>
+            </div>
+        </div>
+        <div class="wrap">
+            <img src="{% static 'vendor/images/сок.jpg' %}" alt="movieImage" class="row_poster"/>
+            <h5 class="poster_title">Напитки</h5>
+            <div class="poster_info">
+                <h2>Напитки</h2>
+                <p>
+                <h2>Прохладительные напитки и коктейли, горячие, ароматные чаи.</h2></p>
+            </div>
+        </div>
+        <div class="wrap">
+            <img src="{% static 'vendor/images/пиво.jpg' %}" alt="movieImage" class="row_poster"/>
+            <h5 class="poster_title">Пиво</h5>
+            <div class="poster_info">
+                <h2>Пиво</h2>
+                <p>Золотистое и пенистое, свежее пиво нашего собственного производства.</p>
+            </div>
+        </div>
+
+        <div class="space"></div>
+        <div class="left_arrow scroll_button" onclick="scrollL()">
+            <i class="arrow left"></i>
+        </div>
+        <div class="right_arrow scroll_button" onclick="scrollR()">
+            <i class="arrow right"></i>
+        </div>
+    </div>
+
+</div>
+<script src="{% static 'scripts/carousel.js' %}"></script>
+</body>
+
+</html>

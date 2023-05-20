@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="5; URL=main.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+        <link href="/static/css/indexstyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <span class="text1">ГАРЦУЮЩАЯ КОБЫЛА</span>
+        <span class="text2">ДОБРО ПОЖАЛОВАТЬ</span>
+    </div>
+<script>
+  // Функция для перехода на другую страницу
+  function redirectToPage() {
+    // Здесь вы можете указать URL страницы, на которую хотите перейти
+    var nextPage = {% url 'main' %};
+
+    // Выполняем переход на следующую страницу
+    window.location.href = nextPage;
+  }
+
+  // Вызываем функцию перехода через 5 секунд (5000 миллисекунд)
+  setTimeout(redirectToPage, 5000);
+</script>
+</body>
+</html>

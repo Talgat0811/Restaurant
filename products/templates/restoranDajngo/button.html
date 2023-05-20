@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 mt-5">
+                <button type="submit" class="btn btn-success" id="submit " onclick="randomSum(1000,9999);">Кнопка
+                </button>
+                <div class=".sum" id="kl"></div>
+            </div>
+        </div>
+    </div>
+</center>
+<script>
+    // document.querySelector('#submit').onclick = function(){
+    //   alert('Вы нажали на кнопку')
+
+    // }
+    // let x=0;
+    // function alerted(){
+    //     // alert('Вынажалнакнопку')
+    //     x=x+1;
+    //     document.querySelector('#kl').innerHTML = (x);
+    // }
+    function randomSum(min, max) {
+        document.querySelector('#kl').innerHTML = (Math.floor(Math.random() * (max - min + 1) + min));
+    }
+
+</script>
+</body>
+</html>

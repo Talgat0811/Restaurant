@@ -1,0 +1,49 @@
+
+.black-block{
+    background-image: url("static/vendor/images/bgblack1.png");
+    padding: 80px 0;
+}
+.block-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-title{
+    font-family: 'Tinos', serif;
+    color: rgb(240, 135, 69);
+    font-weight: 400;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+.left-text{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: aliceblue;
+}
+.right-btn{
+    background-color: rgb(255, 132, 17);
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-left: 30px;
+    transition: background-color 0.3s linear;
+}
+.right-btn:hover{
+    background-color: rgb(255, 160, 87);
+}
+.dishes-title{
+ 
+    font-family: 'Tinos', serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 54px;   
+    text-align: center;
+    padding-top: 132px;
+}
+.dishes-title span{
+    color: rgb(240, 135, 69);
+}

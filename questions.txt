@@ -1,0 +1,5 @@
+1) Нету style.css для стрницы menu.html
+2)salads.html не работает корекктно (фоток нету)
+3)breakfest.html не работает корекктно (фоток нету)
+4)netu file rezervstyle.css poetomu ne rabotaet rezerv.html
+
